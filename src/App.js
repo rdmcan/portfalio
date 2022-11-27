@@ -6,6 +6,7 @@ import Appbar from "./components/appbar";
 import Banner from "./components/banner";
 import Aboutme from "./components/aboutme";
 import Particles from "react-tsparticles"; // npm i react-tsparticles
+import Skills from "./components/skills/indexSkills";
 
 function App() {
   useEffect(() => {
@@ -17,6 +18,7 @@ function App() {
       <Appbar />
       <Banner />
       <Aboutme />
+      <Skills />
     </ThemeProvider>
   );
 }

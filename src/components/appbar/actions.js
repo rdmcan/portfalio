@@ -1,5 +1,5 @@
 import { Divider, ListItemButton, ListItemIcon } from "@mui/material";
-import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import PersonIcon from "@mui/icons-material/Person";
 import {
@@ -7,7 +7,6 @@ import {
   ActionsContainerDesktop,
   MyLIst,
 } from "../../styles/appbar";
-// 47 min
 
 export default function Actions({ matches }) {
   const Component = matches ? ActionsContainerMobile : ActionsContainerDesktop;
@@ -17,7 +16,7 @@ export default function Actions({ matches }) {
       <MyLIst type="row">
         <ListItemButton sx={{ justifyContent: "center" }}>
           <ListItemIcon sx={{ disply: "flex", justifyContent: "center" }}>
-            <ShoppingCartIcon />
+            <InstagramIcon />
           </ListItemIcon>
         </ListItemButton>
         <Divider orientation="vertical" flexItem />

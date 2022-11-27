@@ -8,6 +8,7 @@ import {
   AboutmeContent,
   AboutDescContainer,
 } from "../../styles/aboutme/indexAboutme";
+import Fade from "react-reveal/Fade";
 
 export default function Aboutme() {
   const theme = useTheme();
@@ -17,12 +18,14 @@ export default function Aboutme() {
     <AboutmeContainer>
       <AboutmeContent>
         <AboutmeTitle variant="h6">About me</AboutmeTitle>
-        <AboutDescContainer>
-          <AboutmeImage src="/images/banner/DSCN0148.png" />
-          <AboutmeDescription variant="h6">
-            Hi, I'm Ruben and I'm a graduate student ... I'm experienced in
-          </AboutmeDescription>
-        </AboutDescContainer>
+        <Fade cascade>
+          <AboutDescContainer>
+            <AboutmeImage src="/images/banner/DSCN0148.png" />
+            <AboutmeDescription variant="h6">
+              Hi, I'm Ruben and I'm a graduate student ... I'm experienced in
+            </AboutmeDescription>
+          </AboutDescContainer>
+        </Fade>
       </AboutmeContent>
     </AboutmeContainer>
   );

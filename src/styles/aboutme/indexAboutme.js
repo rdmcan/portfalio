@@ -8,8 +8,8 @@ export const AboutmeContainer = styled(Box)(({ theme }) => ({
   width: "100%",
   height: "100%",
   padding: "0px 0px",
-  marginTop: "480px",
-  marginBottom: "480px",
+  marginTop: "150px",
+  marginBottom: "150px",
   [theme.breakpoints.down("sm")]: {
     flexDirection: "column",
     alignItems: "center",
@@ -32,7 +32,7 @@ export const AboutDescContainer = styled(Box)(() => ({
 
 export const AboutmeTitle = styled(Typography)(({ theme }) => ({
   //   lineHeight: 1.5,
-  fontSize: "29px",
+  fontSize: "34px",
   fontWeight: "bold",
   [theme.breakpoints.down("sm")]: {
     fontSize: "42px",

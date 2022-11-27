@@ -9,6 +9,7 @@ import {
   BannerTxtContent,
 } from "../../styles/banner";
 import ReactTypingEffect from "react-typing-effect";
+import Fade from "react-reveal/Fade";
 
 export default function Banner() {
   const theme = useTheme();
@@ -47,20 +48,21 @@ export default function Banner() {
           </BannerTitle>
         </BannerTxtContent>
       </div>
-      {/* <BannerImage src="/images/banner/emile-perron-xrVDYZRGdw4-unsplash.jpg" /> */}
       <BannerContent>
-        <Stack direction="row" spacing={6} marginTop="2em">
-          {socialArr.map((item) => (
-            <Link
-              aria-label={item.aria}
-              href={item.href}
-              fontSize={"1.5rem"}
-              isExternal
-            >
-              {item.icon}
-            </Link>
-          ))}
-        </Stack>
+        <Fade cascade>
+          <Stack direction="row" spacing={6} marginTop="2em">
+            {socialArr.map((item) => (
+              <Link
+                aria-label={item.aria}
+                href={item.href}
+                fontSize={"1.5rem"}
+                isExternal
+              >
+                {item.icon}
+              </Link>
+            ))}
+          </Stack>
+        </Fade>
       </BannerContent>
     </BannerContainer>
   );
